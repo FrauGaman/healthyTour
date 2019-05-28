@@ -1,0 +1,57 @@
+.hotels
+	&_header
+		padding-top: 79px
+		padding-bottom: 40px
+		text-align: center
+		color: #444444
+		font-size: 52px
+		font-weight: 700
+		line-height: 62px
+		@media screen and (max-width: 576px)
+			font-size: 30px
+			line-height: 30px
+	&_slider
+		.item
+			position: relative
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(0, 0, 0, 0.5)				
+	.slick-active
+		outline: none
+		&:before
+			background-color: transparent
+	.arrow
+		position: absolute
+		width: 42px
+		height: 42px
+		top: 50%
+		margin-top: -21px
+		border: none
+		background-size: 70%
+		border-radius: 0
+		z-index: 99
+		cursor: pointer
+	.prev
+		left: 0
+		background: url('../img/hotels/left_arrow.png') center no-repeat
+	.next
+		right: 0
+		background: url('../img/hotels/right_arrow.png') center no-repeat
+	.info_slider
+		&__item
+		text-align: center
+		.info_stars
+			color: $main_color
+		.info_city
+			font-weight: 400
+		&__about
+			font-size: 16px
+			font-weight: 700
+			line-height: 24px
+

@@ -1,0 +1,85 @@
+.price
+	&_header
+		padding-bottom: 40px
+		text-align: center
+		font-size: 52px
+		font-weight: 700
+		line-height: 62px
+		color: $text_color
+		@media screen and (max-width: 576px)
+			font-size: 30px
+			line-height: 40px
+	&_wrapper
+		@media screen and (max-width: 1200px)
+			display: block
+			text-align: center
+	&_box
+		position: relative
+		display: inline-block
+		@media screen and (max-width: 768px)
+			img
+				width: 100%
+				height: 100%
+		&__info
+			display: block
+			position: absolute
+			padding-left: 26px
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 117px
+			cursor: pointer
+			color: #fff
+			background: -webkit-linear-gradient(90deg, #0b8642 0%, #000000 0%, rgba(0, 0, 0, 0) 100%)
+			background: -moz-linear-gradient(90deg, #0b8642 0%, #000000 0%, rgba(0, 0, 0, 0) 100%)
+			background: -o-linear-gradient(90deg, #0b8642 0%, #000000 0%, rgba(0, 0, 0, 0) 100%)
+			background: -ms-linear-gradient(90deg, #0b8642 0%, #000000 0%, rgba(0, 0, 0, 0) 100%)
+			background: linear-gradient(0deg, #0b8642 0%, #000000 0%, rgba(0, 0, 0, 0) 100%)
+			transition: all 1s
+			.name
+				display: block
+				font-size: 30px
+				font-weight: 400
+				line-height: 60px
+				@media screen and (max-width: 768px)
+					font-size: 20px
+				@media screen and (max-width: 576px)
+					font-size: 18px
+					line-height: 40px
+			.cost
+				font-size: 30px
+				font-weight: 700
+				@media screen and (max-width: 768px)
+					font-size: 20px
+				@media screen and (max-width: 576px)
+					font-size: 18px
+			.date
+				margin-right: 25px
+				float: right
+				font-size: 14px
+				font-weight: 400
+				line-height: 60px
+				opacity: 0.8
+				text-shadow: 0 0 16px rgba(0, 0, 0, 0.9)
+				@media screen and (max-width: 576px)
+					line-height: 40px
+	&_box1, &_box4, &_box5
+		margin-left: -14px
+		margin-bottom: 26px
+		@media screen and (max-width: 1200px)
+			margin-left: 0
+	&_box2, &_box3, &_box6
+		margin-left: 14px
+		margin-bottom: 26px
+		@media screen and (max-width: 1200px)
+			margin-left: 0
+	&_box1, &_box6
+		.price_box__info
+			&:hover
+				height: 200px
+				padding-top: 50px
+	&_box2, &_box3, &_box4, &_box5
+		.price_box__info
+			&:hover
+				height: 150px
+				padding-top: 15px

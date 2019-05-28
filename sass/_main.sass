@@ -1,0 +1,79 @@
+.main
+	background: #38381c url('../img/main/bg.jpg') center no-repeat
+	background-size: cover
+	&_icon
+		padding-top: 14px
+	@media screen and(max-width: 576px)
+		.main_icon__box
+			text-align: center
+	nav
+		margin-left: 60px
+		ul
+			li
+				display: inline-block
+				margin-top: 30px
+				color: #fff
+				font-size: 14px
+				text-transform: uppercase
+				cursor: pointer
+				.wrapper
+					padding: 10px
+				&:hover
+					.wrapper
+						background-color: rgba(0, 0, 0, 0.5)
+						border-radius: 5px
+		@media screen and(max-width: 1200px)
+			display: none
+	&_mobile
+		padding-top: 29px
+		font-size: 20px
+		font-weight: 700
+		color: #fff
+		@media screen and(max-width: 576px)
+			text-align: center
+		small
+			display: block
+			padding-top: -22px
+			font-size: 10px
+			font-weight: 400
+	&_header
+		padding-top: 144px
+		text-align: center
+		font-size: 52px
+		font-weight: 700
+		line-height: 62px
+		color: #fff
+		animation: fadeIn 2s ease-in
+		@media screen and(max-width: 1200px)
+			padding-top: 70px
+			font-size: 45px
+		@media screen and(max-width: 992px)
+			padding-top: 30px
+		@media screen and(max-width: 576px)
+			padding-top: 50px
+			font-size: 30px
+			line-height: 40px
+		&__bottom
+			padding-top: 0
+			padding-bottom: 60px
+			@media screen and(max-width: 576px)
+				padding-bottom: 40px
+	&_zig-icon
+		background: url('../img/main/main_zig_icon.png') center no-repeat
+		padding-top: 40px
+		padding-bottom: 23px
+		@media screen and(max-width: 1200px)
+			padding-top: 30px
+			padding-bottom: 15px
+	&_down-arrow
+		text-align: center
+		padding-top: 153px
+		padding-bottom: 48px
+		@media screen and(max-width: 1200px)
+			padding-top: 140px
+		@media screen and(max-width: 576px)
+			padding-top: 70px
+
+
+
+

@@ -1,0 +1,72 @@
+.comparison
+	line-height: 40px
+	&_header, .mini_header
+		padding-top: 79px
+		padding-bottom: 40px
+		color: $main_color
+		font-size: 52px
+		font-weight: 700
+		@media screen and (max-width: 992px)
+			display: none
+		@media screen and (max-width: 576px)
+			animation: none
+	.mini_header
+		display: none
+		@media screen and (max-width: 992px)
+			display: block
+			padding-top: 60px
+			padding-bottom: 20px
+			text-align: center
+		&__part2
+			@media screen and (max-width: 992px)
+				padding-top: 30px
+	&_arrow
+		padding-top: 103px
+		@media screen and (max-width: 1200px)
+			margin-left: -30px
+		@media screen and (max-width: 992px)
+			display: none
+	.usual_icon
+		@media screen and (max-width: 992px)
+			display: none
+	&_text
+		font-weight: 400
+		color: #abb7b7
+		@media screen and (max-width: 992px)
+			text-align: center
+		.big
+			padding-right: 29px
+			font-size: 32px
+			@media screen and (max-width: 768px)
+				font-size: 28px
+		.medium
+			padding-right: 29px
+			font-size: 24px
+		.small
+			padding-right: 29px
+			font-size: 16px
+		.new-line
+			display: block
+			@media screen and (max-width: 992px)
+				display: inline-block
+		&__result
+			padding-bottom: 73px
+			font-size: 16px
+			font-weight: 400
+			line-height: 26px
+			@media screen and (max-width: 992px)
+				padding-bottom: 50px
+				text-align: center
+
+		.line
+			display: inline-block
+	.useful_result
+		padding-bottom: 131px
+		@media screen and (max-width: 992px)
+			padding-bottom: 90px
+	.header_part2
+		padding-left: 35px
+	.useful-rest
+		background-color: #f5f5f5
+		&_header
+			color: $important_color

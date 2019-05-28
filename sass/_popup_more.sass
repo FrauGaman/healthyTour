@@ -1,0 +1,45 @@
+.popup_more
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: rgba(0, 0, 0, 0.5)
+	z-index: 999
+	&__box
+		position: relative
+		padding: 30px
+		background-color: #fff
+		width: 80%
+		height: 500px
+		margin: 30px auto
+		@media screen and (max-width: 1500px)
+			overflow-y: scroll
+		@media screen and (max-width: 900px)
+			width: 80%
+			height: 80%
+		h3
+			padding-bottom: 20px
+			font-size: 23px
+			font-weight: 700
+			line-height: 24px
+			text-transform: uppercase
+			text-align: center
+			@media screen and (max-width: 750px)
+				font-size: 18px
+		img
+			float: left
+			width: 40%
+			height: auto
+			margin-right: 20px
+			@media screen and (max-width: 1035px)
+				margin-left: 50%
+				transform: translateX(-50%)
+			@media screen and (max-width: 750px)
+				display: none
+	&__text
+		text-align: justify
+		@media screen and (max-width: 1035px)
+			padding-top: 10px
+			clear: left
